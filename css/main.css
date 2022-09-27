@@ -118,9 +118,6 @@ header .navbar-nav .nav-item .nav-link .nav_link_amount_tittle, header .navbar-n
 header .navbar-nav .nav-item .nav-link .nav_link_amount_prize {
   color: #2FC56B;
 }
-header .navbar-brand {
-  margin-right: 8rem;
-}
 header .nav-link.wallet {
   font-family: "Alegreya Sans";
   font-style: normal;
@@ -141,15 +138,25 @@ header .nav-link.wallet span {
   margin-right: 1.2rem;
 }
 
+.navbar-brand {
+  margin-right: 8rem;
+  margin-bottom: 8rem;
+}
+
 .dashboard {
   height: 100%;
 }
 .dashboard .nav-pills {
   margin-top: 2.6rem;
   height: max-content;
+  position: fixed;
+  top: 0;
 }
 .dashboard .nav-pills {
   width: 32rem;
+  margin-right: 2rem;
+  background: #070708;
+  border-right: 1px solid rgba(47, 69, 197, 0.1);
 }
 .dashboard .nav-pills .nav-link {
   display: flex;
@@ -165,9 +172,13 @@ header .nav-link.wallet span {
 .dashboard .nav-pills .nav-link span {
   margin-right: 1.6rem;
 }
-.dashboard .nav-pills .nav-link.active {
+.dashboard .nav-pills .nav-link:hover {
   color: #000000;
   background-color: #2FC56B;
+}
+.dashboard .nav-pills .nav-link.active {
+  color: inherit;
+  background-color: transparent;
 }
 .dashboard .nav__content {
   padding-left: 4.3rem;
@@ -222,7 +233,8 @@ header .nav-link.wallet span {
   color: #000000;
 }
 .harvest__card_btn:hover {
-  color: #000000;
+  color: #ffffff;
+  background: #000000;
 }
 
 .harvest__card_amount_head, .harvest__card_plx_head {
@@ -286,6 +298,10 @@ header .nav-link.wallet span {
   background: transparent;
   color: #FFFFFF;
   line-height: 1;
+}
+.harvest__card_btn.claimed:hover {
+  color: #000000;
+  background: #ffffff;
 }
 
 .nav.nav-tabs {

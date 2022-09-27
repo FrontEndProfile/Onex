@@ -154,9 +154,7 @@ header {
       }
     }
   }
-  .navbar-brand {
-    margin-right: 8rem;
-  }
+
   .nav-link.wallet {
     font-family: 'Alegreya Sans';
     font-style: normal;
@@ -178,15 +176,25 @@ span {
   }
   margin-bottom: 2.3rem;
 }
+.navbar-brand {
+  margin-right: 8rem;
+  margin-bottom: 8rem;
+}
 
 .dashboard {
   height: 100%;
   .nav-pills {
     margin-top: 2.6rem;
     height: max-content;
+    position: fixed;
+    top: 0;
   }
   .nav-pills {
     width: 32rem;
+    margin-right: 2rem;
+    background: #070708;
+    // background: #444475;
+    border-right: 1px solid rgba(47, 69, 197, 0.1);
     .nav-link {
       display: flex;
 flex-direction: row;
@@ -202,9 +210,15 @@ span {
 margin-bottom: 1.6rem;
     }
   }
-  .nav-pills .nav-link.active{
-    color: #000000;
+  .nav-pills .nav-link{
+    &:hover {
+      color: #000000;
     background-color: #2FC56B;
+    }
+  }
+  .nav-pills .nav-link.active{
+      color: inherit;
+    background-color: transparent;
   }
   .nav__content {
     padding-left: 4.3rem;
@@ -259,7 +273,8 @@ margin-bottom: 1.6rem;
   line-height: 1;
   color: #000000;
   &:hover {
-    color: #000000;
+    color: #ffffff;
+    background: #000000;
   }
 }
 .harvest__card_amount_head,.harvest__card_plx_head {
@@ -320,6 +335,10 @@ span {
   background: transparent;
   color: #FFFFFF;
   line-height: 1;
+  &:hover {
+    color: #000000;
+    background: #ffffff;
+  }
 
 }
 
