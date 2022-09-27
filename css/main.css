@@ -313,10 +313,8 @@ header .nav-link.wallet span {
   border-bottom: 1px solid #2FC56B;
 }
 
-.tab-content {
+.tab-content .taby {
   padding-top: 4.9rem;
-}
-.tab-content .tab-pane {
   display: flex;
   justify-content: center;
 }
