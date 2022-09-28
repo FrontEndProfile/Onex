@@ -94,22 +94,25 @@ body {
   /* Firefox */
   * {
     scrollbar-width: auto;
-    scrollbar-color: #ffffff #6667AB;
+    scrollbar-color: #2FC56B black;
+    
   }
 
   /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
     width: 8px;
+    border-radius: 9rem;
+
   }
 
   *::-webkit-scrollbar-track {
-    background: #6667AB;
+    background: black;
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: #ffffff;
-    border-radius: 6px;
-    border: 1px solid #b0b0b0e7;
+    background-color: #2FC56B;
+    border-radius: 2rem;
+    border: none;
   }
 
 body {
@@ -687,6 +690,15 @@ opacity: 0.75;
   .navy .navy_item {
     margin-bottom: 1.2rem;
     margin-left: 1rem;
+     .navy_link {
+      font-family: "Alegreya Sans SC", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      color: rgba(255, 255, 255, 0.8);
+      opacity: 0.75;
+    }
   }
   .navy .social_link {
     padding-bottom: 1rem;
