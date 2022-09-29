@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Inter:wght@100;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Inter:wght@100;300;400;500;600;700;800&display=swap");
 html {
   font-size: 62.5%;
 }
@@ -151,6 +151,7 @@ header .nav-link.wallet span {
   height: max-content;
   position: fixed;
   top: 0;
+  left: 2rem;
 }
 .dashboard .nav-pills {
   width: 32rem;
@@ -463,7 +464,7 @@ header .nav-link.wallet span {
 }
 .lock__duration_btns .harvest__card_btn {
   margin-right: 2rem;
-  padding: 12px 24px;
+  padding: 12px 23px;
   background: transparent;
   color: white;
   border: 1px solid #35333E;
@@ -517,6 +518,10 @@ header .nav-link.wallet span {
   color: rgba(255, 255, 255, 0.8);
   opacity: 0.75;
 }
+.navy .navy_item .navy_link:hover {
+  color: #2FC56B;
+  opacity: 1;
+}
 .navy .social_link {
   margin-right: 2.4rem;
 }
@@ -532,6 +537,450 @@ header .nav-link.wallet span {
   right: -0.8rem;
   width: 8rem;
   display: block;
+}
+
+.tables_tittle {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+.tables_tittle .tables_tittle_text {
+  font-family: "Alegreya Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 2rem;
+}
+
+.tables_tittle.first {
+  margin-right: 8rem;
+  max-width: 341.7px;
+}
+
+.amount__cards_tables_tittle {
+  width: 341.7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2rem;
+}
+
+.amount__cards_img {
+  margin-right: 1rem;
+}
+
+.amount__cards_time_left {
+  margin-right: 0.6rem;
+}
+
+.amount__cards {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 32px;
+  max-width: 1023px;
+  height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2.8rem;
+  padding-right: 1.9rem;
+  margin-bottom: 2.9rem;
+}
+.amount__cards .harvest__card_btn {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.amount__cards_img {
+  width: 110.6px;
+  margin-top: -1.8rem;
+}
+
+.f_14_light, .f_14_white {
+  font-family: "Alegreya Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.64);
+}
+
+.f_14_white {
+  color: rgba(255, 255, 255, 0.71);
+}
+
+.f_14_green {
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  color: #2FC56B;
+}
+
+.exchange__card {
+  width: 466px;
+  height: 457px;
+  border: 1px solid #FFFFFF;
+  border-radius: 32px;
+  margin-right: 4.6rem;
+  margin-top: 5.6rem;
+}
+.exchange__card .exchange__card_header {
+  padding-top: 3.3rem;
+  padding-left: 4rem;
+  padding-right: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.7rem;
+}
+.exchange__card .exchange__card_header .exchange__card_header_tittle .exchange__card_header_tittle_head {
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  color: rgba(255, 255, 255, 0.75);
+}
+.exchange__card .exchange__card_header .exchange__card_header_tittle .exchange__card_header_tittle_small {
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.exchange__card .exchange__card_header_handler .exchange__card_header_icon {
+  width: 2.4rem;
+  margin-right: 2.4rem;
+}
+.exchange__card .exchange__card_header_handler .exchange__card_header_icon:hover {
+  scale: 1.1;
+  translate: 0 -0.3rem;
+}
+.exchange__card .exchange__card_header_handler .exchange__card_handler_percentage {
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 1.7rem;
+}
+.exchange__card .exchange__card_header_handler .exchange__card_handler_percentage span {
+  font-weight: 400;
+  line-height: 17px;
+  padding-left: 5px;
+}
+.exchange__card .exchange__card_body {
+  padding-left: 4.3rem;
+  padding-right: 3.7rem;
+}
+.exchange__card .exchange__card_body .exchange__card_from_layout .exchange__card_from_layout_tittle {
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 6px;
+  padding-left: 1rem;
+}
+.exchange__card .exchange__card_body .exchange__card_from_layout .exchange__card_from_layout_input {
+  border: 1px solid rgba(233, 233, 241, 0.2);
+  border-radius: 12px;
+  width: 386px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+}
+.exchange__card .exchange__card_body .exchange__card_from_layout .dropdown .dropdown-toggle {
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.exchange__card .exchange__card_body .exchange__card_from_layout .dropdown .dropdown__icon {
+  width: 20.8px;
+  margin-right: 17px;
+}
+.exchange__card .exchange__card_body .exchange__card_from_layout .dropdown .dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border: none !important;
+  background-image: url(../images/Arrow-DownCircle.svg);
+  width: 2rem;
+  height: 2rem;
+}
+
+.dashboard__tittle {
+  padding: 5rem 0;
+  text-align: center;
+}
+.dashboard__tittle .dashboard__tittle_big {
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 44px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2.6rem;
+}
+.dashboard__tittle .dashboard__tittle_small {
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.dashboard__value_layout {
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+}
+.dashboard__value_layout .dashboard__value_header {
+  display: flex;
+  align-items: center;
+}
+.dashboard__value_layout .dashboard__value_img {
+  width: 32px;
+  margin-right: 2rem;
+}
+.dashboard__value_layout .dashboard__value_text {
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 1.7rem;
+}
+.dashboard__value_layout .dashboard__value_body .dashboard__value_body_text {
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 44px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-left: 2.4rem;
+}
+
+.compound__card_layout {
+  width: fit-content;
+}
+
+.compound__card {
+  text-align: center;
+}
+.compound__card .compound__card_img {
+  width: 4.8rem;
+  margin-bottom: 0.6rem;
+}
+.compound__card .compound__card_tittle {
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 1.3rem;
+}
+.compound__card .compound__card_amount {
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.partners .partners__tittle {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 58px;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 5.5rem 0 3rem;
+  text-align: center;
+}
+
+.partners__img {
+  margin-bottom: 4.3rem;
+}
+
+.launchpad__head {
+  padding: 2.6rem 0;
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+
+.stepn__card_main {
+  margin-left: 5.7rem;
+  margin-top: 5.1rem;
+}
+.stepn__card_main .stepn__card {
+  margin-bottom: 3.3rem;
+}
+.stepn__card_main .col {
+  width: fit-content !important;
+}
+.stepn__card_main .stepn__card_img {
+  width: 257px;
+  margin-right: 47px;
+}
+.stepn__card_main .stepn__card_info_tittle {
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+.stepn__card_main .stepn__card_info_small {
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+  margin-bottom: 2.5rem;
+}
+.stepn__card_main .stepn__card_info_btns .stepn__card_btn {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  padding: 8px 18px;
+  width: fit-content;
+  display: inline-block;
+  margin-right: 2.1rem;
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+.stepn__card_main .stepn__card_info_btns .stepn__card_btn .stepn__card_btn_icon {
+  width: 1.6rem;
+  margin-right: 0.6rem;
+}
+.stepn__card_main .stepn__card_info_content {
+  display: flex;
+  justify-content: space-between;
+}
+.stepn__card_main .stepn__card_info_content .stepn__card_info_content_date h6 {
+  margin-bottom: 0.6rem;
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.stepn__card_main .stepn__card_info_content .stepn__card_info_content_date p {
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 0;
+}
+
+.stepn__card_info_play_with_form {
+  border: 1px solid #FFFFFF;
+  border-radius: 54px;
+  padding: 5px 24px;
+  width: 288px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stepn__card_info__lay {
+  margin-bottom: 2rem;
+}
+
+.stepn__card_info_play_with_tittle {
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.stepn__card_info_play_currency_img {
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+.stepn__card_info_play_currency_data {
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.stepn__card_info_play_max input {
+  background: transparent;
+  max-width: 50px;
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  outline: none;
+}
+.stepn__card_info_play_max .btn {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration-line: underline;
+  color: #2FC56B;
+  padding-left: 4px;
+}
+
+.stepn__card_info_continue {
+  margin-top: 1.1rem;
+  background: #2FC56B;
+  border-radius: 54px;
+  height: 31px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  gap: 12px;
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+.stepn__card_info_continue:hover {
+  color: white;
 }
 
 .navbar-toggler-icon {
