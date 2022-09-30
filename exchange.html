@@ -448,7 +448,7 @@
                 <div class="exchange__card_body">
                   <div class="exchange__card_from_layout">
                     <div class="exchange__card_from_layout_tittle">From</div>
-                    <div class="exchange__card_from_layout_input">
+                    <div class="exchange__card_from_layout_input d-flex justify-content-between">
                       <div class="dropdown">
                         <a class="btn border-0 shadow-none dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           <span><img class="dropdown__icon" src="images/binance-coin.png" alt=""></span>
@@ -456,12 +456,65 @@
                         </a>
                       
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <span><img class="dropdown__icon" src="images/binance-coin.png" alt=""></span>
+                          BNB
+                          </a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <span><img class="dropdown__icon" src="images/binance-coin.png" alt=""></span>
+                          BNB
+                          </a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <span><img class="dropdown__icon" src="images/binance-coin.png" alt=""></span>
+                          BNB
+                          </a></li>
                         </ul>
                       </div>
+                      <div class="exchange__card_from_layout_input_value">
+                        <input type="text" value="2.40214" >
+                        <button  type="button">MAX</button>
+                      </div>
                     </div>
+
+                    <div class="exchange__card_layout_divider">
+                      <div class="exchange__card_layout_divider_line"></div>
+                      <div class="exchange__card_layout_divider_icon"><img src="images/data_con.svg" alt=""></div>
+                      <div class="exchange__card_layout_divider_line"></div>
+                    </div>
+
+                    <div class="exchange__card_from_layout_tittle">to</div>
+                    <div class="exchange__card_from_layout_input d-flex justify-content-between">
+                      <div class="dropdown">
+                        <a class="btn border-0 shadow-none dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span><img class="dropdown__icon" src="images/binance-coin.png" alt=""></span>
+                          BNB
+                        </a>
+                      
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">
+                            <span><img class="dropdown__icon" src="images/binance-coin.png" alt=""></span>
+                          BNB
+                          </a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <span><img class="dropdown__icon" src="images/binance-coin.png" alt=""></span>
+                          BNB
+                          </a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <span><img class="dropdown__icon" src="images/binance-coin.png" alt=""></span>
+                          BNB
+                          </a></li>
+                        </ul>
+                      </div>
+                      <div class="exchange__card_from_layout_input_value">
+                        <input type="text" value="2.40214" >
+                        <button  type="button">MAX</button>
+                      </div>
+                    </div>
+
+                    <a href="#" class="exchange__card_from_layout_btn">
+                      Unlock Wallet
+                    </a>
+                    
                   </div>
                 </div>
             </div>
@@ -477,6 +530,76 @@
                         </ul>
                     </div>
                 </div>
+                <div class="exchange__card_body add">
+                  <div class="exchange__card_from_layout">
+                    <div class="exchange__card_from_layout_input d-flex justify-content-between border-0 ps-0 mb-0">
+                      <div class="exchange__card_from_layout__head">YOUR LIQUIDITY:</div>
+                      <div class="exchange__card_from_layout__number_layout">
+                        <div class="no__style">0</div>
+                        <div class="info__style"><img class="w-100" src="images/info.svg" alt=""></div>
+                      </div>
+                    </div>
+
+                    <div class="exchange__card_layout_divider w-100">
+                      <div class="exchange__card_layout_divider_line w-100"></div>
+                    </div>
+
+                    <a href="#" class="exchange__card_from_layout_btn liquidity__btn">
+                      Add Liquidity
+                    </a>
+                    <div class="liquidity__layout">
+                      <div class="liquidity__layout_text">Don’t see the pool you joined? <a href="#">Import it</a></div>
+                      <div class="liquidity__layout_content">
+                        Or if you staked your LP tokens in a farm, unstake them to see them here. 
+                      </div>
+                    </div>
+
+                    
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col px-0 table__result">
+              <table id="example" class="table" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Transaction type <span class="p-0"><img class="data__icon" src="images/data__icon.svg"></span></th>
+                        <th>Coin <span class="p-0"><img class="data__icon" src="images/data__icon.svg"></span></th>
+                        <th>Amount <span class="p-0"><img class="data__icon" src="images/data__icon.svg"></span></th>
+                        <th>Date <span class="p-0"><img class="data__icon" src="images/data__icon.svg"></span></th>
+                        <th>TX <span class="p-0"><img class="data__icon" src="images/data__icon.svg"></span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="sell">Sell</td>
+                        <td class="coin_type">
+                          <img class="coin_type_img" src="images/bitcoin.svg" alt="">
+                          <span>BNB</span>
+                        </td>
+                        <td class="amount_red">61</td>
+                        <td class="date">2011-04-25</td>
+                        <td class="tx">$320,800</td>
+                    </tr>
+                    
+                    <tr>
+                      <td class="sell">Sell</td>
+                      <td class="coin_type">Edinburgh</td>
+                      <td class="amount_red">61</td>
+                      <td class="date">2011-04-25</td>
+                      <td class="tx">$320,800</td>
+                  </tr>
+                  <tr>
+                    <td class="sell">Sell</td>
+                    <td class="coin_type">Edinburgh</td>
+                    <td class="amount_red">61</td>
+                    <td class="date">2011-04-25</td>
+                    <td class="tx">$320,800</td>
+                </tr>
+                </tbody>
+                
+            </table>
             </div>
           </div>
         </div>
@@ -485,6 +608,9 @@
 
   </main>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

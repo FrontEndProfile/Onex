@@ -149,8 +149,6 @@ header .nav-link.wallet span {
 }
 .dashboard .nav-pills {
   margin-top: 2.6rem;
-  height: -webkit-max-content;
-  height: -moz-max-content;
   height: max-content;
   position: fixed;
   top: 0;
@@ -368,22 +366,6 @@ header .nav-link.wallet span {
   padding-right: 2.4rem;
   background: transparent;
 }
-.deposit form .form-control::-moz-placeholder {
-  font-family: "Alegreya Sans", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: rgba(255, 255, 255, 0.64);
-}
-.deposit form .form-control:-ms-input-placeholder {
-  font-family: "Alegreya Sans", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: rgba(255, 255, 255, 0.64);
-}
 .deposit form .form-control::placeholder {
   font-family: "Alegreya Sans", sans-serif;
   font-style: normal;
@@ -419,8 +401,7 @@ header .nav-link.wallet span {
   font-weight: 800;
   font-size: 12px;
   line-height: 14px;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: #2FC56B;
 }
 
@@ -698,7 +679,7 @@ header .nav-link.wallet span {
 }
 .exchange__card .exchange__card_body {
   padding-left: 4.3rem;
-  padding-right: 3.7rem;
+  padding-right: 2rem;
 }
 .exchange__card .exchange__card_body .exchange__card_from_layout .exchange__card_from_layout_tittle {
   font-family: "Alegreya SC", serif;
@@ -717,6 +698,8 @@ header .nav-link.wallet span {
   height: 58px;
   display: flex;
   align-items: center;
+  padding-left: 2.2rem;
+  margin-bottom: 2.5rem;
 }
 .exchange__card .exchange__card_body .exchange__card_from_layout .dropdown .dropdown-toggle {
   font-family: "Alegreya SC", serif;
@@ -737,8 +720,158 @@ header .nav-link.wallet span {
   content: "";
   border: none !important;
   background-image: url(../images/Arrow-DownCircle.svg);
-  width: 2rem;
-  height: 2rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0.3rem;
+}
+.exchange__card .exchange__card_body .exchange__card_from_layout .dropdown .dropdown-menu {
+  padding: 0;
+  top: 1rem !important;
+  left: 0;
+  background: #2FC56B;
+  border: 1px solid #ffffff;
+  min-width: 14rem;
+  margin-left: -0.8rem !important;
+}
+.exchange__card .exchange__card_body .exchange__card_from_layout .dropdown .dropdown-menu .dropdown-item {
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  padding: 8px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.537);
+}
+.exchange__card .exchange__card_body .exchange__card_from_layout .dropdown .dropdown-menu .dropdown-item:hover {
+  color: white;
+  background-color: rgba(7, 7, 8, 0.2039215686);
+}
+.exchange__card .exchange__card_body .exchange__card_from_layout .dropdown .dropdown-menu .dropdown__icon {
+  width: 20.8px;
+  margin-right: 17px;
+}
+.exchange__card .exchange__card_body .exchange__card_from_layout .exchange__card_from_layout_input_value {
+  padding-right: 2.2rem;
+}
+.exchange__card .exchange__card_body .exchange__card_from_layout .exchange__card_from_layout_input_value input {
+  width: 61px;
+  height: 27px;
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFFFFF;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+.exchange__card .exchange__card_body .exchange__card_from_layout .exchange__card_from_layout_input_value button {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration-line: underline;
+  color: #2FC56B;
+  background: transparent;
+  border: none;
+  margin-left: 2px;
+}
+.exchange__card .exchange__card_body .exchange__card_layout_divider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0.6rem;
+}
+.exchange__card .exchange__card_body .exchange__card_layout_divider .exchange__card_layout_divider_line {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.exchange__card .exchange__card_body .exchange__card_layout_divider .exchange__card_layout_divider_icon {
+  margin: 0 2rem;
+}
+.exchange__card .exchange__card_body .exchange__card_from_layout_btn {
+  background: #2FC56B;
+  border-radius: 54px;
+  width: 288px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 4.6rem;
+}
+.exchange__card .exchange__card_body .exchange__card_from_layout_btn:hover {
+  color: black;
+}
+.exchange__card .exchange__card_body .exchange__card_from_layout_input .exchange__card_from_layout__head {
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.exchange__card .exchange__card_body .exchange__card_from_layout_input .exchange__card_from_layout__number_layout {
+  display: flex;
+  align-items: center;
+}
+.exchange__card .exchange__card_body .exchange__card_from_layout_input .exchange__card_from_layout__number_layout .no__style {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: right;
+  color: #FFFFFF;
+  margin-right: 0.8rem;
+  margin-top: 3px;
+}
+.exchange__card .exchange__card_body .exchange__card_from_layout_input .exchange__card_from_layout__number_layout .info__style {
+  width: 20px;
+  height: fit-content;
+}
+.exchange__card .exchange__card_body .liquidity__layout {
+  padding-top: 3.8rem;
+}
+.exchange__card .exchange__card_body .liquidity__layout .liquidity__layout_text {
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-bottom: 1.8rem;
+}
+.exchange__card .exchange__card_body .liquidity__layout .liquidity__layout_text a {
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  color: #2FC56B;
+}
+.exchange__card .exchange__card_body .liquidity__layout .liquidity__layout_content {
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.exchange__card .exchange__card_body .liquidity__btn {
+  margin-top: 5.2rem;
+}
+.exchange__card .exchange__card_body.add {
+  padding-right: 2rem;
 }
 
 .dashboard__tittle {
@@ -1001,6 +1134,77 @@ header .nav-link.wallet span {
 }
 .stepn__card_info_continue:hover {
   color: white;
+}
+
+.table__result {
+  padding-top: 4.8rem;
+}
+.table__result .dataTables_length, .table__result .dataTables_filter, .table__result .dataTables_info, .table__result .dataTables_paginate {
+  display: none;
+}
+.table__result .table thead tr th {
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 4.9rem;
+}
+.table__result .table thead tr th * {
+  padding: 0 !important;
+}
+.table__result .table thead tr th .data__icon {
+  width: 12px;
+  height: fit-content;
+  margin-left: 1.2rem;
+}
+.table__result .table tbody tr td {
+  padding-bottom: 2.8rem;
+}
+.table__result .table tbody tr .sell {
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FF2A3A;
+}
+.table__result .table tbody tr .coin_type .coin_type_img {
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  padding: 7px;
+  margin-right: 1.2rem;
+}
+.table__result .table tbody tr .coin_type span {
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.table__result .table tbody tr .amount_red {
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FF2A3A;
+}
+.table__result .table tbody tr .date {
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.table__result .table > thead :not(caption) > * {
+  padding: 4.9rem 0.5rem;
+  border-bottom-width: 0px;
 }
 
 .navbar-toggler-icon {
