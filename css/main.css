@@ -152,6 +152,9 @@ header .navbar-nav .nav-item .nav-link {
 header .navbar-nav .nav-item .nav-link .coin_icon {
   margin-right: 17.73px;
 }
+header .navbar-nav .nav-item .nav-link .coin_icon img {
+  width: 33px;
+}
 
 header .navbar-nav .nav-item .nav-link .nav_link_amount_tittle, header .navbar-nav .nav-item .nav-link .nav_link_amount_prize {
   font-family: "Alegreya Sans", sans-serif;
