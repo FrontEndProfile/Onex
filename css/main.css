@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Inter:wght@100;300;400;500;600;700;800&display=swap");
+
 html {
   font-size: 62.5%;
 }
@@ -19,10 +20,15 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin: 0;
   font-weight: 500;
   line-height: 1.2;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 .btn,
@@ -45,9 +51,9 @@ a {
   color: #ffffff;
 }
 
-* {
+/* * {
   transition: 0.2s all;
-}
+} */
 
 *,
 body {
@@ -92,22 +98,61 @@ body {
 }
 
 .main__page {
-  padding: 3.2rem 4rem;
   color: white;
 }
 
 header {
-  margin-bottom: 2.3rem;
+  margin-bottom: 0;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: #000000;
+  padding: 32px 43px 32px 365px;
+  z-index: 10;
 }
+
+.header-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1060px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav-close {
+  font-size: 40px;
+  align-items: center;
+  justify-content: center;
+  line-height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+header .navbar {
+  max-width: 1055px;
+  margin: 0 auto;
+}
+
 header .navbar-nav .nav-item .nav-link {
   color: #ffffff;
   display: flex;
   align-items: center;
-  margin-right: 15.06px;
+  margin-right: 15px;
+  padding: 0;
 }
+
 header .navbar-nav .nav-item .nav-link .coin_icon {
   margin-right: 17.73px;
 }
+
 header .navbar-nav .nav-item .nav-link .nav_link_amount_tittle, header .navbar-nav .nav-item .nav-link .nav_link_amount_prize {
   font-family: "Alegreya Sans", sans-serif;
   font-style: normal;
@@ -116,9 +161,11 @@ header .navbar-nav .nav-item .nav-link .nav_link_amount_tittle, header .navbar-n
   line-height: 19px;
   color: #FFFFFF;
 }
+
 header .navbar-nav .nav-item .nav-link .nav_link_amount_prize {
   color: #2FC56B;
 }
+
 header .nav-link.wallet {
   font-family: "Alegreya Sans";
   font-style: normal;
@@ -135,31 +182,55 @@ header .nav-link.wallet {
   width: 176px;
   height: 52px;
 }
+
 header .nav-link.wallet span {
   margin-right: 1.2rem;
 }
 
 .navbar-brand {
-  margin-right: 8rem;
-  margin-bottom: 8rem;
+  padding: 28px 20px;
+  text-align: center;
+}
+
+.sidbarnav {
+  padding: 10px 35px 0 43px;
+  flex: 1;
+}
+
+.sidbarnav ul li {
+  margin: 0 0 16px 0;
+}
+
+.sidbarnav ul li:last-child {
+  margin: 0;
 }
 
 .dashboard {
   height: 100%;
 }
+
 .dashboard .nav-pills {
-  margin-top: 2.6rem;
-  height: max-content;
+  height: 100%;
   position: fixed;
   top: 0;
-  left: 2rem;
-}
-.dashboard .nav-pills {
-  width: 32rem;
-  margin-right: 2rem;
+  left: 0;
+  max-width: 320px;
+  width: 100%;
   background: #070708;
+  z-index: 100;
   border-right: 1px solid rgba(47, 69, 197, 0.1);
 }
+
+.sidbarnav-main {
+  height: calc(100% - 118px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 76px;
+  overflow-y: auto;
+}
+
+
 .dashboard .nav-pills .nav-link {
   display: flex;
   flex-direction: row;
@@ -171,19 +242,46 @@ header .nav-link.wallet span {
   color: #ffffff;
   margin-bottom: 1.6rem;
 }
+
 .dashboard .nav-pills .nav-link span {
   margin-right: 1.6rem;
 }
+
+.dashboard .nav-pills .nav-link.active {
+  color: #000000;
+  background-color: #2FC56B;
+}
+
+.dashboard .nav-pills .nav-link.active .menu_text {
+  color: #000000;
+}
+
+.dashboard .nav-pills .nav-link.active span svg path {
+  fill: #000
+}
+
 .dashboard .nav-pills .nav-link:hover {
   color: #000000;
   background-color: #2FC56B;
 }
-.dashboard .nav-pills .nav-link.active {
-  color: inherit;
-  background-color: transparent;
+
+.dashboard .nav-pills .nav-link:hover .menu_text {
+  color: #000000;
 }
-.dashboard .nav__content {
-  padding-left: 4.3rem;
+
+.dashboard .nav-pills .nav-link:hover span svg path {
+  fill: #000
+}
+
+.nav__content {
+  padding: 143px 0 0 320px;
+}
+
+.aeroswap-contant {
+  padding: 0 43px;
+  max-width: 1145px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .harvest__card {
@@ -234,6 +332,7 @@ header .nav-link.wallet span {
   line-height: 1;
   color: #000000;
 }
+
 .harvest__card_btn:hover {
   color: #ffffff;
   background: #000000;
@@ -248,6 +347,7 @@ header .nav-link.wallet span {
   opacity: 0.9;
   margin-bottom: 0.9rem;
 }
+
 .harvest__card_amount_head span, .harvest__card_plx_head span {
   opacity: 0.9;
   color: #FFFFFF;
@@ -268,6 +368,7 @@ header .nav-link.wallet span {
   line-height: 17px;
   color: #838291;
 }
+
 .harvest__card_minus_value span {
   color: #838291;
 }
@@ -290,6 +391,7 @@ header .nav-link.wallet span {
   line-height: 17px;
   color: #838291;
 }
+
 .harvest__card_plx_gray span {
   color: #838291;
 }
@@ -301,6 +403,7 @@ header .nav-link.wallet span {
   color: #FFFFFF;
   line-height: 1;
 }
+
 .harvest__card_btn.claimed:hover {
   color: #000000;
   background: #ffffff;
@@ -311,6 +414,7 @@ header .nav-link.wallet span {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   width: calc(100% + 4rem);
 }
+
 .nav.nav-tabs .nav-item .nav-link {
   border: none;
   font-family: "Alegreya Sans SC", sans-serif;
@@ -325,6 +429,7 @@ header .nav-link.wallet span {
   text-align: start;
   padding-left: 2rem;
 }
+
 .nav.nav-tabs .nav-item.show .nav-link, .nav.nav-tabs .nav-link.active {
   color: #2FC56B;
   background-color: transparent !important;
@@ -339,11 +444,9 @@ header .nav-link.wallet span {
 
 .lock__wallet {
   padding-top: 3.9rem;
-  width: 439px;
   margin-bottom: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 32px;
-  margin-right: 5.9rem;
 }
 
 .lock__wallet_header {
@@ -357,6 +460,15 @@ header .nav-link.wallet span {
   padding-right: 4.5rem;
   margin-bottom: 3.2rem;
 }
+
+.deposit h4 {
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  display: block;
+  margin-bottom: 15px;
+}
+
 .deposit form .form-control {
   border: 1px solid #35333E;
   border-radius: 60px;
@@ -364,16 +476,15 @@ header .nav-link.wallet span {
   height: 47px;
   padding-left: 2rem;
   padding-right: 2.4rem;
-  background: transparent;
-}
-.deposit form .form-control::placeholder {
-  font-family: "Alegreya Sans", sans-serif;
-  font-style: normal;
-  font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  background: transparent;
   color: rgba(255, 255, 255, 0.64);
 }
+
+.deposit form .form-control::placeholder { 
+  color: rgba(255, 255, 255, 0.64);
+}
+
 .deposit form .btn {
   right: 1.4em;
   top: 50%;
@@ -393,6 +504,7 @@ header .nav-link.wallet span {
   color: #FFFFFF;
   padding: 12px 24px;
 }
+
 .deposit form .max {
   right: 53%;
   border: none !important;
@@ -441,6 +553,7 @@ header .nav-link.wallet span {
   margin-right: 5.1rem;
   margin-top: 2.2rem;
 }
+
 .lock__duration .lock__duration_head {
   font-family: "Alegreya Sans", sans-serif;
   font-style: normal;
@@ -451,6 +564,7 @@ header .nav-link.wallet span {
   color: rgba(255, 255, 255, 0.75);
   margin-right: 4px;
 }
+
 .lock__duration .lock__duration_icon {
   cursor: pointer;
   width: 23px;
@@ -463,6 +577,7 @@ header .nav-link.wallet span {
   margin-right: 5.1rem;
   margin-top: 1.2rem;
 }
+
 .lock__duration_btns .harvest__card_btn {
   margin-right: 2rem;
   padding: 12px 23px;
@@ -473,7 +588,8 @@ header .nav-link.wallet span {
   width: 105px;
   height: 32px;
 }
-.lock__duration_btns .btn-check:checked + .btn, .lock__duration_btns .btn.active, .lock__duration_btns .btn.show, .lock__duration_btns .btn:first-child:active, .lock__duration_btns :not(.btn-check) + .btn:active {
+
+.lock__duration_btns .btn-check:checked+.btn, .lock__duration_btns .btn.active, .lock__duration_btns .btn.show, .lock__duration_btns .btn:first-child:active, .lock__duration_btns :not(.btn-check)+.btn:active {
   background: #2FC56B;
   color: #000000;
   border-color: none;
@@ -483,33 +599,40 @@ header .nav-link.wallet span {
   margin-bottom: 5.4rem;
 }
 
-.unlock_btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 16px 24px;
+.unlock_btn { 
+  padding: 16px 0;
   gap: 12px;
   background: #2FC56B;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 54px;
-  margin-left: 7.2rem;
-  margin-right: 9.5rem;
-  margin-bottom: 5.4rem;
+  margin: 0 auto 5.4rem;
   font-family: "Alegreya Sans", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
   color: #000000;
+  max-width: 272px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .unlock_btn:hover {
   color: #000000;
 }
 
-.navy .navy_item {
-  margin-bottom: 3.2rem;
-  margin-left: 7rem;
+.navy {
+  padding: 0 0 0 35px;
+  max-width: 140px;
+  margin: 0 auto;
 }
+
+.navy .navy_item {
+  margin: 0 0 33px 0;
+}
+
+
+
 .navy .navy_item .navy_link {
   font-family: "Alegreya Sans SC", sans-serif;
   font-style: normal;
@@ -518,21 +641,39 @@ header .nav-link.wallet span {
   line-height: 29px;
   color: rgba(255, 255, 255, 0.8);
   opacity: 0.75;
+  display: block;
 }
+
 .navy .navy_item .navy_link:hover {
   color: #2FC56B;
   opacity: 1;
 }
+
+.social-media {
+  display: flex;
+  align-items: center;
+  max-width: 140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.social-media li {
+  margin-right: 18px;
+}
+
+.social-media li:last-child {
+  margin: 0;
+}
+
 .navy .social_link {
-  margin-right: 2.4rem;
+  margin-right: 18px;
 }
-.navy .navy_item.social {
-  margin-left: 3rem;
-}
+
 
 .soon {
   position: relative;
 }
+
 .soon .down_arrow {
   position: absolute;
   right: -0.8rem;
@@ -545,6 +686,7 @@ header .nav-link.wallet span {
   align-items: center;
   padding: 2rem 0;
 }
+
 .tables_tittle .tables_tittle_text {
   font-family: "Alegreya Sans", sans-serif;
   font-style: normal;
@@ -588,6 +730,7 @@ header .nav-link.wallet span {
   padding-right: 1.9rem;
   margin-bottom: 2.9rem;
 }
+
 .amount__cards .harvest__card_btn {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -621,14 +764,22 @@ header .nav-link.wallet span {
   color: #2FC56B;
 }
 
+.exchange-add .row {
+  margin: 0 -22px;
+}
+
+.exchange-add [class*="col-"] {
+  padding: 0 22px;
+}
+
 .exchange__card {
-  width: 466px;
+  width: 100%;
   height: 457px;
   border: 1px solid #FFFFFF;
   border-radius: 32px;
-  margin-right: 4.6rem;
   margin-top: 5.6rem;
 }
+
 .exchange__card .exchange__card_header {
   padding-top: 3.3rem;
   padding-left: 4rem;
@@ -637,6 +788,7 @@ header .nav-link.wallet span {
   justify-content: space-between;
   margin-bottom: 1.7rem;
 }
+
 .exchange__card .exchange__card_header .exchange__card_header_tittle .exchange__card_header_tittle_head {
   font-family: "Alegreya SC", serif;
   font-style: normal;
@@ -645,6 +797,7 @@ header .nav-link.wallet span {
   line-height: 33px;
   color: rgba(255, 255, 255, 0.75);
 }
+
 .exchange__card .exchange__card_header .exchange__card_header_tittle .exchange__card_header_tittle_small {
   font-family: "Alegreya SC", serif;
   font-style: normal;
@@ -653,14 +806,17 @@ header .nav-link.wallet span {
   line-height: 19px;
   color: rgba(255, 255, 255, 0.6);
 }
+
 .exchange__card .exchange__card_header_handler .exchange__card_header_icon {
   width: 2.4rem;
   margin-right: 2.4rem;
 }
+
 .exchange__card .exchange__card_header_handler .exchange__card_header_icon:hover {
   scale: 1.1;
   translate: 0 -0.3rem;
 }
+
 .exchange__card .exchange__card_header_handler .exchange__card_handler_percentage {
   font-family: "Inter", sans-serif;
   font-style: italic;
@@ -672,15 +828,18 @@ header .nav-link.wallet span {
   color: rgba(255, 255, 255, 0.8);
   margin-top: 1.7rem;
 }
+
 .exchange__card .exchange__card_header_handler .exchange__card_handler_percentage span {
   font-weight: 400;
   line-height: 17px;
   padding-left: 5px;
 }
+
 .exchange__card .exchange__card_body {
   padding-left: 4.3rem;
   padding-right: 2rem;
 }
+
 .exchange__card .exchange__card_body .exchange__card_from_layout .exchange__card_from_layout_tittle {
   font-family: "Alegreya SC", serif;
   font-style: normal;
@@ -691,6 +850,7 @@ header .nav-link.wallet span {
   margin-bottom: 6px;
   padding-left: 1rem;
 }
+
 .exchange__card .exchange__card_body .exchange__card_from_layout .exchange__card_from_layout_input {
   border: 1px solid rgba(233, 233, 241, 0.2);
   border-radius: 12px;
@@ -701,6 +861,7 @@ header .nav-link.wallet span {
   padding-left: 2.2rem;
   margin-bottom: 2.5rem;
 }
+
 .exchange__card .exchange__card_body .exchange__card_from_layout .dropdown .dropdown-toggle {
   font-family: "Alegreya SC", serif;
   font-style: normal;
@@ -709,10 +870,12 @@ header .nav-link.wallet span {
   line-height: 24px;
   color: #FFFFFF;
 }
+
 .exchange__card .exchange__card_body .exchange__card_from_layout .dropdown .dropdown__icon {
   width: 20.8px;
   margin-right: 17px;
 }
+
 .exchange__card .exchange__card_body .exchange__card_from_layout .dropdown .dropdown-toggle::after {
   display: inline-block;
   margin-left: 0.255em;
@@ -727,6 +890,7 @@ header .nav-link.wallet span {
   position: absolute;
   top: 0.3rem;
 }
+
 .exchange__card .exchange__card_body .exchange__card_from_layout .dropdown .dropdown-menu {
   padding: 0;
   top: 1rem !important;
@@ -736,6 +900,7 @@ header .nav-link.wallet span {
   min-width: 14rem;
   margin-left: -0.8rem !important;
 }
+
 .exchange__card .exchange__card_body .exchange__card_from_layout .dropdown .dropdown-menu .dropdown-item {
   font-family: "Alegreya SC", serif;
   font-style: normal;
@@ -746,17 +911,21 @@ header .nav-link.wallet span {
   padding: 8px 14px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.537);
 }
+
 .exchange__card .exchange__card_body .exchange__card_from_layout .dropdown .dropdown-menu .dropdown-item:hover {
   color: white;
   background-color: rgba(7, 7, 8, 0.2039215686);
 }
+
 .exchange__card .exchange__card_body .exchange__card_from_layout .dropdown .dropdown-menu .dropdown__icon {
   width: 20.8px;
   margin-right: 17px;
 }
+
 .exchange__card .exchange__card_body .exchange__card_from_layout .exchange__card_from_layout_input_value {
   padding-right: 2.2rem;
 }
+
 .exchange__card .exchange__card_body .exchange__card_from_layout .exchange__card_from_layout_input_value input {
   width: 61px;
   height: 27px;
@@ -771,6 +940,7 @@ header .nav-link.wallet span {
   border: none;
   outline: none;
 }
+
 .exchange__card .exchange__card_body .exchange__card_from_layout .exchange__card_from_layout_input_value button {
   font-family: "Alegreya Sans SC", sans-serif;
   font-style: italic;
@@ -783,19 +953,23 @@ header .nav-link.wallet span {
   border: none;
   margin-left: 2px;
 }
+
 .exchange__card .exchange__card_body .exchange__card_layout_divider {
   display: flex;
   align-items: center;
   width: 100%;
   margin-bottom: 0.6rem;
 }
+
 .exchange__card .exchange__card_body .exchange__card_layout_divider .exchange__card_layout_divider_line {
   width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .exchange__card .exchange__card_body .exchange__card_layout_divider .exchange__card_layout_divider_icon {
   margin: 0 2rem;
 }
+
 .exchange__card .exchange__card_body .exchange__card_from_layout_btn {
   background: #2FC56B;
   border-radius: 54px;
@@ -806,11 +980,14 @@ header .nav-link.wallet span {
   justify-content: center;
   align-items: center;
   margin: auto;
+  color: #000;
   margin-top: 4.6rem;
 }
+
 .exchange__card .exchange__card_body .exchange__card_from_layout_btn:hover {
   color: black;
 }
+
 .exchange__card .exchange__card_body .exchange__card_from_layout_input .exchange__card_from_layout__head {
   font-family: "Alegreya SC", serif;
   font-style: normal;
@@ -819,10 +996,12 @@ header .nav-link.wallet span {
   line-height: 22px;
   color: rgba(255, 255, 255, 0.6);
 }
+
 .exchange__card .exchange__card_body .exchange__card_from_layout_input .exchange__card_from_layout__number_layout {
   display: flex;
   align-items: center;
 }
+
 .exchange__card .exchange__card_body .exchange__card_from_layout_input .exchange__card_from_layout__number_layout .no__style {
   font-family: "Alegreya Sans SC", sans-serif;
   font-style: normal;
@@ -834,13 +1013,16 @@ header .nav-link.wallet span {
   margin-right: 0.8rem;
   margin-top: 3px;
 }
+
 .exchange__card .exchange__card_body .exchange__card_from_layout_input .exchange__card_from_layout__number_layout .info__style {
   width: 20px;
   height: fit-content;
 }
+
 .exchange__card .exchange__card_body .liquidity__layout {
   padding-top: 3.8rem;
 }
+
 .exchange__card .exchange__card_body .liquidity__layout .liquidity__layout_text {
   font-family: "Alegreya SC", serif;
   font-style: normal;
@@ -850,6 +1032,7 @@ header .nav-link.wallet span {
   color: #FFFFFF;
   margin-bottom: 1.8rem;
 }
+
 .exchange__card .exchange__card_body .liquidity__layout .liquidity__layout_text a {
   font-family: "Alegreya SC", serif;
   font-style: normal;
@@ -859,6 +1042,7 @@ header .nav-link.wallet span {
   text-decoration-line: underline;
   color: #2FC56B;
 }
+
 .exchange__card .exchange__card_body .liquidity__layout .liquidity__layout_content {
   font-family: "Alegreya SC", serif;
   font-style: normal;
@@ -867,9 +1051,11 @@ header .nav-link.wallet span {
   line-height: 22px;
   color: #FFFFFF;
 }
+
 .exchange__card .exchange__card_body .liquidity__btn {
   margin-top: 5.2rem;
 }
+
 .exchange__card .exchange__card_body.add {
   padding-right: 2rem;
 }
@@ -878,6 +1064,7 @@ header .nav-link.wallet span {
   padding: 5rem 0;
   text-align: center;
 }
+
 .dashboard__tittle .dashboard__tittle_big {
   font-family: "Inter", sans-serif;
   font-style: italic;
@@ -887,6 +1074,7 @@ header .nav-link.wallet span {
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 2.6rem;
 }
+
 .dashboard__tittle .dashboard__tittle_small {
   font-family: "Inter", sans-serif;
   font-style: italic;
@@ -900,14 +1088,17 @@ header .nav-link.wallet span {
   padding: 3rem 0;
   margin-bottom: 2rem;
 }
+
 .dashboard__value_layout .dashboard__value_header {
   display: flex;
   align-items: center;
 }
+
 .dashboard__value_layout .dashboard__value_img {
   width: 32px;
   margin-right: 2rem;
 }
+
 .dashboard__value_layout .dashboard__value_text {
   font-family: "Inter", sans-serif;
   font-style: italic;
@@ -917,6 +1108,7 @@ header .nav-link.wallet span {
   color: rgba(255, 255, 255, 0.75);
   margin-bottom: 1.7rem;
 }
+
 .dashboard__value_layout .dashboard__value_body .dashboard__value_body_text {
   font-family: "Inter", sans-serif;
   font-style: italic;
@@ -934,10 +1126,12 @@ header .nav-link.wallet span {
 .compound__card {
   text-align: center;
 }
+
 .compound__card .compound__card_img {
   width: 4.8rem;
   margin-bottom: 0.6rem;
 }
+
 .compound__card .compound__card_tittle {
   font-family: "Inter", sans-serif;
   font-style: italic;
@@ -947,6 +1141,7 @@ header .nav-link.wallet span {
   color: rgba(255, 255, 255, 0.75);
   margin-bottom: 1.3rem;
 }
+
 .compound__card .compound__card_amount {
   font-family: "Inter", sans-serif;
   font-style: italic;
@@ -969,6 +1164,7 @@ header .nav-link.wallet span {
 
 .partners__img {
   margin-bottom: 4.3rem;
+  text-align: center;
 }
 
 .launchpad__head {
@@ -981,28 +1177,38 @@ header .nav-link.wallet span {
   color: #FFFFFF;
 }
 
+.stepn-text-box {
+  flex: 1;
+}
+
 .stepn__card_main {
-  margin-left: 5.7rem;
-  margin-top: 5.1rem;
+  margin-left: 42px;
+  margin-top: 51px;
 }
+
 .stepn__card_main .stepn__card {
-  margin-bottom: 3.3rem;
+  margin-bottom: 45px;
 }
+
 .stepn__card_main .col {
   width: fit-content !important;
 }
+
 .stepn__card_main .stepn__card_img {
   width: 257px;
-  margin-right: 47px;
+  margin-right: 25px;
 }
+
 .stepn__card_main .stepn__card_info_tittle {
   font-family: "Alegreya SC", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
-  line-height: 44px;
+  line-height: 1;
+  margin: 0 0 17px 0;
   color: #FFFFFF;
 }
+
 .stepn__card_main .stepn__card_info_small {
   font-family: "Alegreya SC", serif;
   font-style: normal;
@@ -1010,8 +1216,9 @@ header .nav-link.wallet span {
   font-size: 14px;
   line-height: 19px;
   color: #FFFFFF;
-  margin-bottom: 2.5rem;
+  margin-bottom: 22px;
 }
+
 .stepn__card_main .stepn__card_info_btns .stepn__card_btn {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 5px;
@@ -1026,23 +1233,31 @@ header .nav-link.wallet span {
   line-height: 15px;
   color: #FFFFFF;
 }
+
+.stepn__card_info_play_with {
+  margin: 18px 0 0px 0px;
+}
+
 .stepn__card_main .stepn__card_info_btns .stepn__card_btn .stepn__card_btn_icon {
   width: 1.6rem;
   margin-right: 0.6rem;
 }
+
 .stepn__card_main .stepn__card_info_content {
   display: flex;
   justify-content: space-between;
 }
+
 .stepn__card_main .stepn__card_info_content .stepn__card_info_content_date h6 {
   margin-bottom: 0.6rem;
   font-family: "Alegreya SC", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1;
   color: #FFFFFF;
 }
+
 .stepn__card_main .stepn__card_info_content .stepn__card_info_content_date p {
   font-family: "Alegreya SC", serif;
   font-style: normal;
@@ -1064,7 +1279,7 @@ header .nav-link.wallet span {
 }
 
 .stepn__card_info__lay {
-  margin-bottom: 2rem;
+  margin-bottom: 10px;
 }
 
 .stepn__card_info_play_with_tittle {
@@ -1103,6 +1318,7 @@ header .nav-link.wallet span {
   color: #FFFFFF;
   outline: none;
 }
+
 .stepn__card_info_play_max .btn {
   font-family: "Alegreya Sans SC", sans-serif;
   font-style: italic;
@@ -1132,6 +1348,7 @@ header .nav-link.wallet span {
   line-height: 22px;
   color: #000000;
 }
+
 .stepn__card_info_continue:hover {
   color: white;
 }
@@ -1139,9 +1356,11 @@ header .nav-link.wallet span {
 .table__result {
   padding-top: 4.8rem;
 }
+
 .table__result .dataTables_length, .table__result .dataTables_filter, .table__result .dataTables_info, .table__result .dataTables_paginate {
   display: none;
 }
+
 .table__result .table thead tr th {
   font-family: "Alegreya SC", serif;
   font-style: normal;
@@ -1150,18 +1369,24 @@ header .nav-link.wallet span {
   line-height: 17px;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 4.9rem;
+  padding: 20px 0;
 }
+
 .table__result .table thead tr th * {
   padding: 0 !important;
 }
+
 .table__result .table thead tr th .data__icon {
   width: 12px;
   height: fit-content;
   margin-left: 1.2rem;
 }
+
 .table__result .table tbody tr td {
-  padding-bottom: 2.8rem;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .table__result .table tbody tr .sell {
   font-family: "Alegreya SC", serif;
   font-style: normal;
@@ -1170,6 +1395,16 @@ header .nav-link.wallet span {
   line-height: 22px;
   color: #FF2A3A;
 }
+
+.table__result .table tbody tr .buy {
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2FC56B;
+}
+
 .table__result .table tbody tr .coin_type .coin_type_img {
   border: 1px solid #FFFFFF;
   border-radius: 50%;
@@ -1178,6 +1413,7 @@ header .nav-link.wallet span {
   padding: 7px;
   margin-right: 1.2rem;
 }
+
 .table__result .table tbody tr .coin_type span {
   font-family: "Alegreya SC", serif;
   font-style: normal;
@@ -1186,6 +1422,7 @@ header .nav-link.wallet span {
   line-height: 22px;
   color: #FFFFFF;
 }
+
 .table__result .table tbody tr .amount_red {
   font-family: "Alegreya SC", serif;
   font-style: normal;
@@ -1194,6 +1431,16 @@ header .nav-link.wallet span {
   line-height: 22px;
   color: #FF2A3A;
 }
+
+.table__result .table tbody tr .amount_green {
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2FC56B;
+}
+
 .table__result .table tbody tr .date {
   font-family: "Alegreya SC", serif;
   font-style: normal;
@@ -1202,7 +1449,8 @@ header .nav-link.wallet span {
   line-height: 22px;
   color: #FFFFFF;
 }
-.table__result .table > thead :not(caption) > * {
+
+.table__result .table>thead :not(caption)>* {
   padding: 4.9rem 0.5rem;
   border-bottom-width: 0px;
 }
@@ -1213,104 +1461,477 @@ header .nav-link.wallet span {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(47, 197, 107)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-@media (max-width: 1400px) {
-  .dashboard .nav-pills .nav-link {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 16px 16px;
-    width: 200px;
-    height: 55px;
-    border-radius: 12px;
-    color: #ffffff;
-    margin-bottom: 1.6rem;
-  }
-  .dashboard .nav-pills {
-    width: 24rem;
-  }
-  .soon .down_arrow {
-    display: none;
-  }
-  .harvest__card {
-    width: calc(100% - 0.7rem);
-  }
-  .dashboard .nav__content {
-    padding-left: 3.3rem;
-  }
-  .harvest__card {
-    padding-left: 1.4rem;
-    padding-right: 2rem;
-  }
+
+
+/****** UPDATE ******/
+
+.capital-lock-tab table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 30px;
 }
-@media (max-width: 1200px) {
-  .nav.nav-tabs {
-    width: calc(100% + 0rem);
-  }
-  .lock__wallet {
-    padding-top: 3.2rem;
-    width: 400px;
-    margin-right: 2.9rem;
-  }
-  .lock__duration_btns {
-    display: flex;
-    align-items: center;
-    margin-left: 3.7rem;
-    margin-right: 2.1rem;
-    margin-top: 1.2rem;
-  }
-  .harvest__card {
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 2rem;
-  }
-  .dashboard .nav-pills .nav-link > span {
-    display: block !important;
-  }
-  .dashboard .nav-pills .nav-link .menu_text {
-    display: none;
-  }
-  .dashboard .nav-pills .nav-link .down_arrow {
-    display: none !important;
-  }
-  .dashboard .nav-pills .nav-link {
-    padding: 8px 18px;
-    width: 60px;
-    height: 60px;
-  }
-  .dashboard .nav-pills {
-    width: 7rem;
-  }
-  .navy .navy_item {
-    margin-bottom: 1.2rem;
-    margin-left: 1rem;
-  }
-  .navy .navy_item .navy_link {
-    font-family: "Alegreya Sans SC", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 20px;
-    color: rgba(255, 255, 255, 0.8);
-    opacity: 0.75;
-  }
-  .navy .social_link {
-    padding-bottom: 1rem;
-    display: flex;
-  }
-  .deposit form .max {
-    right: 48%;
-  }
+
+.capital-lock-tab thead tr th {
+  color: rgba(250, 250, 250, 0.7);
+  font-weight: 500;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  padding: 0 19px 0 28px;
 }
-@media (max-width: 991px) {
-  .tab-content .tab-pane {
-    flex-wrap: wrap;
-  }
-  .tab-content .tab-pane .lock__wallet {
-    margin: 0;
-    margin-bottom: 1.8rem;
-  }
-  header .navbar-nav .nav-item .nav-link {
-    margin-right: 0;
-    margin-bottom: 2rem;
-  }
-}/*# sourceMappingURL=main.css.map */
+
+.capital-lock-tab tbody tr td {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.64);
+  font-size: 14px;
+  font-family: "Alegreya SC", serif;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 27px 19px 27px 28px;
+}
+
+.capital-lock-tab tbody tr td:first-child {
+  border-radius: 32px 0 0 32px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.capital-lock-tab tbody tr td:last-child {
+  border-radius: 0 32px 32px 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.capital-lock-tab tbody tr td .media {
+  display: flex;
+}
+
+.capital-lock-tab tbody tr td .media .image-holder {
+  max-width: 38px;
+  width: 100%;
+}
+
+.capital-lock-tab tbody tr td .media .text-box {
+  padding-left: 9px;
+}
+
+.capital-lock-tab tbody tr td .media .text-box h4 {
+  font-family: 'Alegreya SC', serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0 0 5px 0;
+}
+
+.capital-lock-tab tbody tr td .media .text-box p {
+  font-style: italic;
+  color: #2FC56B;
+  font-family: "Alegreya SC", serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.capital-lock-tab tbody tr td span {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 14px;
+  color: #2FC56B;
+  font-family: "Inter", sans-serif;
+}
+
+.harvest__card_btn__outline {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.harvest__card_btn__outline:hover {
+  background: #2FC56B;
+  color: #000000;
+}
+
+.farms-joind-sec .media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  ;
+}
+
+.farms-joind-sec .nav.nav-tabs {
+  border: none;
+  padding: 0;
+}
+
+.farm-sort form {
+  display: flex;
+}
+
+.farm-sort form .form-group {
+  margin-left: 18px;
+}
+
+.farm-sort form .form-group label {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  font-family: "Alegreya SC", serif;
+  font-size: 16px;
+  display: block;
+  width: 75px;
+}
+
+.farm-sort form .form-group {
+  position: relative;
+}
+
+.farm-sort form .form-group .form-control {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 54px;
+  height: 37px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  padding-left: 24px;
+  background-color: transparent;
+  box-shadow: none;
+  width: 173px;
+}
+
+.farm-sort form .form-group select.form-control {
+  width: 111px;
+  background: url(../images/arrow-down2.svg) no-repeat;
+  background-position: 85% center;
+}
+
+.search-icon {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+  align-items: center;
+}
+
+.farma-detail-box {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 32px;
+  padding: 32px 32px 32px;
+  margin: 25px 0;
+}
+
+.farma-detail-top ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.farma-detail-top ul li span {
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  font-family: "Alegreya SC", serif;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 0 2px 0;
+}
+
+.farma-detail-top ul li p {
+  font-weight: 400;
+  font-size: 12px;
+  color: #2FC56B;
+  display: flex;
+}
+
+.farma-detail-top ul li p img {
+  margin-left: 6px;
+}
+
+.farma-detail-calc {
+  margin: 15px 0 0 0;
+}
+
+.farma-detail-calc ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 14px 0;
+}
+
+.farma-detail-calc ul li span {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Alegreya SC", serif;
+  display: block;
+}
+
+.farma-detail-calc ul li p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+
+.farma-detail-calc ul li p img {
+  margin-right: 4px;
+}
+
+.farma-detail-harvest {
+  margin: 30px 0 0 0px
+}
+
+.farma-detail-harvest ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.farma-detail-harvest ul li span {
+  font-weight: 500;
+  font-size: 24px;
+  font-family: "Alegreya SC", serif;
+  color: #fff;
+}
+
+.farma-detail-harvest ul li p strong {
+  color: #2FC56B;
+
+}
+
+.farma-detail-harvest ul li p {
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+}
+
+.harvest__card_btn {
+  width: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+  font-family: "Alegreya SC", serif;
+  height: 43px;
+  padding: 0;
+}
+
+.unlock-btn {
+  width: 100%;
+  font-weight: 500;
+  height: 54px;
+  font-size: 16px;
+  color: #000;
+  display: flex;
+  background: #2FC56B;
+  border-radius: 54px;
+  align-items: center;
+  justify-content: center;
+  margin: 33px 0 33px 0;
+}
+
+.unlock-btn:hover {
+  color: #000;
+}
+
+.unlock-btn.active {
+  display: none;
+}
+
+.farma-detail-total {
+  margin: 32px 0 0 0;
+}
+
+.farma-detail-total ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.farma-detail-total ul li span {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Alegreya SC", serif;
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+  width: 140px;
+  margin: 0 0 10px 0;
+}
+
+.farma-detail-total ul li a {
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration-line: underline;
+  font-family: "Alegreya SC", serif;
+  color: #2FC56B;
+  display: block;
+  width: 140px;
+}
+
+.detail-btn {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  justify-content: center;
+}
+
+.detail-btn img {
+  margin-left: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.detail-btn:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.farma-hidden {
+  display: none;
+  margin: 20px 0 15px 0;
+}
+
+.detail-btn.active span img {
+  margin-left: 5px;
+  transform: rotate(180deg);
+  transition: all 0.5s ease-in-out;
+}
+
+/***** NFT STORE SEC ******/
+.nft-store-sec h4 {
+  font-weight: 500;
+  font-family: "Alegreya SC", serif;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 20px 0 0 0px;
+}
+
+.nft-store-sec .nav.nav-tabs {
+  border: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+
+.nft-store-box {
+  padding: 13px 0;
+}
+
+.nft-store-box span {
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  display: flex;
+  font-family: "Alegreya SC", serif;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 10px 0;
+}
+
+.nft-store-box span img {
+  margin-left: 4px;
+}
+
+.nft-store-box .image-holder img {
+  width: 100%;
+}
+
+.nft-store-box .text-inner {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 8px 0;
+}
+
+.nft-store-box .text-box ul {
+  max-width: 218px;
+  width: 100%;
+  margin: 0 auto
+}
+
+.nft-store-box .text-box ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "Alegreya SC", serif;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0 0 7px 0;
+
+}
+
+.nft-store-box .text-box ul li img {
+  margin-right: 3px;
+}
+
+.buy-btn {
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2FC56B;
+  border: 1px solid #35333E;
+  border-radius: 60px;
+  height: 30px;
+  max-width: 218px;
+  width: 100%;
+  margin: 0 auto
+}
+
+
+
+.text-bottom a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 10px 0;
+}
+
+.text-bottom a img {
+  margin-left: 8px;
+}
+
+.nft-store-sec .row {
+  margin: 0 -25px;
+}
+
+.nft-store-sec [class*="col-"] {
+  padding: 0 25px;
+}
+
+.exchange-add {
+  width: 100%;
+}
+
+.apply-btn {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  background: #2FC56B;
+  border-radius: 54px;
+  width: 216px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #2FC56B;
+  margin-top: -14px;
+}
+
+.apply-btn:hover {
+  background-color: transparent;
+  color: #2FC56B
+}

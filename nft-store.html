@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dashboard</title>
+  <title>NFT MCBA3f2hAMAAFBFbggkSZIMXSRJkmToAgAAADcREWcPWjZ0aWx</title>
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -14,7 +15,9 @@
 
 <body>
   <main class="main__page">
+    <!-- ! HEADER  -->
     <div class="d-flex align-items-start dashboard">
+
       <div class="nav flex-column nav-pills flex-nowrap">
         <a href="javascript:void(0)" class="nav-close d-flex d-lg-none">&times;</a>
 
@@ -25,7 +28,7 @@
           <div class="sidbarnav">
             <ul>
               <li>
-                <a href="dashboard.html" class="nav-link active">
+                <a href="dashboard.html" class="nav-link">
                   <span>
                     <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path opacity="0.4"
@@ -156,7 +159,7 @@
                 </a>
               </li>
               <li>
-                <a href="nft-store.html" class="nav-link" type="button">
+                <a href="nft-store.html" class="nav-link active" type="button">
                   <span>
                     <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_223_572)">
@@ -181,11 +184,8 @@
                           <rect width="23" height="23" fill="white" />
                         </clipPath>
                       </defs>
-                    </svg>
-
-
-                  </span>
-
+                    </svg> 
+                  </span> 
                   <div class="menu_text">NFT Store</div>
 
                 </a>
@@ -216,14 +216,7 @@
 
                 </a>
               </li>
-            </ul>
-
-
-
-
-
-
-
+            </ul> 
           </div>
           <div class="navy-main">
             <ul class="navy">
@@ -294,6 +287,7 @@
           </div>
         </div>
       </div>
+
       <div class="nav__content w-100">
         <header>
           <nav class="header-navbar">
@@ -426,126 +420,185 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="dashboard__tittle">
-              <div class="dashboard__tittle_big">Trade, Earn, Refer on the most <br>
-                progressive DEX on BNB Chain
+          <div class="row overflow-hidden farms-joind-sec nft-store-sec">
+            <div class="col-12">
+              <h4>Partners List</h4>
+              <div class="media">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link " id="ALL-tab" data-bs-toggle="tab" data-bs-target="#ALL-tab-pane"
+                      type="button" role="tab" aria-controls="ALL-tab-pane" aria-selected="true">ALL</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="Binance-tab" data-bs-toggle="tab"
+                      data-bs-target="#Binance-tab-pane" type="button" role="tab" aria-controls="Binance-tab-pane"
+                      aria-selected="false">Binance</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Polygon-tab" data-bs-toggle="tab" data-bs-target="#Polygon-tab-pane"
+                      type="button" role="tab" aria-controls="Polygon-tab-pane" aria-selected="false">Polygon</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="NFts-tab" data-bs-toggle="tab" data-bs-target="#NFts-tab-pane"
+                      type="button" role="tab" aria-controls="NFts-tab-pane" aria-selected="false">My NFts</button>
+                  </li>
+                </ul>
+                <div class="farm-sort">
+                  <form>
+                    <div class="form-group d-flex align-items-center">
+                      <label>Sort by:</label>
+                      <select class="form-control">
+                        <option>Hot</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Search" />
+                      <a class="search-icon" href="#"><img src="images/search-icon.svg" alt="" /></a>
+                    </div>
+                  </form>
+                </div>
               </div>
-              <div class="dashboard__tittle_small">
-                Enjoy the lowest exchange fee, profitable features & Multi-type Referral program
-              </div>
-            </div>
-          </div>
-          <div class="dashboard-value">
-            <div class="row">
-              <div class="col-md-4 col-sm-6">
-                <div class="dashboard__value_layout">
-                  <div class="dashboard__value_header">
-                    <div class="dashboard__value_img"><img class="w-100" src="images/bitcoin.svg" alt=""></div>
-                    <div class="dashboard__value_text">Total Value Locked</div>
-                  </div>
-                  <div class="dashboard__value_body">
-                    <div class="dashboard__value_body_text">$327 939 241
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade" id="ALL-tab-pane" role="tabpanel" aria-labelledby="ALL-tab" tabindex="0">
+                </div>
+                <div class="tab-pane fade  show active" id="Binance-tab-pane" role="tabpanel"
+                  aria-labelledby="Binance-tab" tabindex="0">
+                  <div class="nft-store-detail">
+                    <div class="row">
+                      <div class="col-md-4 col-sm-6">
+                        <div class="nft-store-box">
+                          <span>Superman NFT #4221 <img src="images/link-icon.png" alt="" /></span>
+                          <div class="image-holder">
+                            <img src="images/nft-store-img1.png" alt="" class="img-fluid" />
+                          </div>
+                          <div class="text-box">
+                            <div class="text-inner">
+                              <ul>
+                                <li>Price: <span>120.8 USDT</span></li>
+                                <li>Creator: <span><img src="images/binance-coin.png" alt="" />Binance</span></li>
+                              </ul>
+                              <a class="buy-btn" href="#">Buy</a>
+                            </div>
+                            <div class="text-bottom">
+                              <a href="#">Details <img src="images/arrow-down2.svg" alt="" /></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-6">
+                        <div class="nft-store-box">
+                          <span>Superman NFT #4221 <img src="images/link-icon.png" alt="" /></span>
+                          <div class="image-holder">
+                            <img src="images/nft-store-img2.png" alt="" class="img-fluid" />
+                          </div>
+                          <div class="text-box">
+                            <div class="text-inner">
+                              <ul>
+                                <li>Price: <span>120.8 USDT</span></li>
+                                <li>Creator: <span><img src="images/binance-coin.png" alt="" />Binance</span></li>
+                              </ul>
+                              <a class="buy-btn" href="#">Buy</a>
+                            </div>
+                            <div class="text-bottom">
+                              <a href="#">Details <img src="images/arrow-down2.svg" alt="" /></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-6">
+                        <div class="nft-store-box">
+                          <span>Superman NFT #4221 <img src="images/link-icon.png" alt="" /></span>
+                          <div class="image-holder">
+                            <img src="images/nft-store-img3.png" alt="" class="img-fluid" />
+                          </div>
+                          <div class="text-box">
+                            <div class="text-inner">
+                              <ul>
+                                <li>Price: <span>120.8 USDT</span></li>
+                                <li>Creator: <span><img src="images/binance-coin.png" alt="" />Binance</span></li>
+                              </ul>
+                              <a class="buy-btn" href="#">Buy</a>
+                            </div>
+                            <div class="text-bottom">
+                              <a href="#">Details <img src="images/arrow-down2.svg" alt="" /></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-6">
+                        <div class="nft-store-box">
+                          <span>Superman NFT #4221 <img src="images/link-icon.png" alt="" /></span>
+                          <div class="image-holder">
+                            <img src="images/nft-store-img4.png" alt="" class="img-fluid" />
+                          </div>
+                          <div class="text-box">
+                            <div class="text-inner">
+                              <ul>
+                                <li>Price: <span>120.8 USDT</span></li>
+                                <li>Creator: <span><img src="images/binance-coin.png" alt="" />Binance</span></li>
+                              </ul>
+                              <a class="buy-btn" href="#">Buy</a>
+                            </div>
+                            <div class="text-bottom">
+                              <a href="#">Details <img src="images/arrow-down2.svg" alt="" /></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-6">
+                        <div class="nft-store-box">
+                          <span>Superman NFT #4221 <img src="images/link-icon.png" alt="" /></span>
+                          <div class="image-holder">
+                            <img src="images/nft-store-img5.png" alt="" class="img-fluid" />
+                          </div>
+                          <div class="text-box">
+                            <div class="text-inner">
+                              <ul>
+                                <li>Price: <span>120.8 USDT</span></li>
+                                <li>Creator: <span><img src="images/binance-coin.png" alt="" />Binance</span></li>
+                              </ul>
+                              <a class="buy-btn" href="#">Buy</a>
+                            </div>
+                            <div class="text-bottom">
+                              <a href="#">Details <img src="images/arrow-down2.svg" alt="" /></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-6">
+                        <div class="nft-store-box">
+                          <span>Superman NFT #4221 <img src="images/link-icon.png" alt="" /></span>
+                          <div class="image-holder">
+                            <img src="images/nft-store-img6.png" alt="" class="img-fluid" />
+                          </div>
+                          <div class="text-box">
+                            <div class="text-inner">
+                              <ul>
+                                <li>Price: <span>120.8 USDT</span></li>
+                                <li>Creator: <span><img src="images/binance-coin.png" alt="" />Binance</span></li>
+                              </ul>
+                              <a class="buy-btn" href="#">Buy</a>
+                            </div>
+                            <div class="text-bottom">
+                              <a href="#">Details <img src="images/arrow-down2.svg" alt="" /></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="dashboard__value_layout">
-                  <div class="dashboard__value_header">
-                    <div class="dashboard__value_img"><img class="w-100" src="images/bitcoin.svg" alt=""></div>
-                    <div class="dashboard__value_text">Total Value Locked</div>
-                  </div>
-                  <div class="dashboard__value_body">
-                    <div class="dashboard__value_body_text">$327 939 241
-                    </div>
-                  </div>
+                <div class="tab-pane fade" id="Polygon-tab-pane" role="tabpanel" aria-labelledby="Polygon-tab"
+                  tabindex="0">
+                </div>
+                <div class="tab-pane fade" id="NFts-tab-pane" role="tabpanel" aria-labelledby="NFts-tab" tabindex="0">
                 </div>
               </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="dashboard__value_layout">
-                  <div class="dashboard__value_header">
-                    <div class="dashboard__value_img"><img class="w-100" src="images/bitcoin.svg" alt=""></div>
-                    <div class="dashboard__value_text">Total Value Locked</div>
-                  </div>
-                  <div class="dashboard__value_body">
-                    <div class="dashboard__value_body_text">$327 939 241
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-between pe-md-5">
-            <div class="col-md-2 compound__card_layout">
-              <div class="compound__card">
-                <div class="compound__card_img mx-auto"><img src="images/tottal__volume.svg" alt=""></div>
-                <div class="compound__card_tittle">Total Volume</div>
-                <div class="compound__card_amount">$327B</div>
-              </div>
-            </div>
-            <div class="col-md-2 compound__card_layout">
-              <div class="compound__card">
-                <div class="compound__card_img mx-auto"><img src="images/tottal__volume2.png" alt=""></div>
-                <div class="compound__card_tittle">Total Volume</div>
-                <div class="compound__card_amount">$327B</div>
-              </div>
-            </div>
-            <div class="col-md-2 compound__card_layout">
-              <div class="compound__card">
-                <div class="compound__card_img mx-auto"><img src="images/tottal__volume3.png" alt=""></div>
-                <div class="compound__card_tittle">Total Volume</div>
-                <div class="compound__card_amount">$327B</div>
-              </div>
-            </div>
-            <div class="col-md-2 compound__card_layout">
-              <div class="compound__card">
-                <div class="compound__card_img mx-auto"><img src="images/tottal__volume4.png" alt=""></div>
-                <div class="compound__card_tittle">Total Volume</div>
-                <div class="compound__card_amount">$327B</div>
-              </div>
-            </div>
-            <div class="col-md-2 compound__card_layout">
-              <div class="compound__card">
-                <div class="compound__card_img mx-auto"><img src="images/tottal__volume5.png" alt=""></div>
-                <div class="compound__card_tittle">Total Volume</div>
-                <div class="compound__card_amount">$327B</div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="partners">
-              <div class="partners__tittle">Partners</div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-6">
-              <div class="partners__img"><img class="img-fluid" src="images/binance.png" alt=""></div>
-            </div>
-            <div class="col-md-3  col-sm-4 col-6">
-              <div class="partners__img"><img class="img-fluid" src="images/binance2.png" alt=""></div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-6">
-              <div class="partners__img"><img class="img-fluid" src="images/binance3.png" alt=""></div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-6">
-              <div class="partners__img"><img class="img-fluid" src="images/binance4.png" alt=""></div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-6">
-              <div class="partners__img"><img class="img-fluid" src="images/binance5.png" alt=""></div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-6">
-              <div class="partners__img"><img class="img-fluid" src="images/binance6.png" alt=""></div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-6">
-              <div class="partners__img"><img class="img-fluid" src="images/binance7.png" alt=""></div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-6">
-              <div class="partners__img"><img class="img-fluid" src="images/binance8.png" alt=""></div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </main>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>

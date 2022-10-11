@@ -1,1 +1,873 @@
-/*# sourceMappingURL=responsive.css.map */
+@media (max-width: 1300px) {
+  .navbar-brand img {
+    width: 160px;
+    height: auto;
+  }
+
+  .navbar-brand {
+    padding: 20px;
+  }
+
+  .dashboard .nav-pills {
+    max-width: 250px;
+  }
+
+  .sidbarnav {
+    padding: 10px 25px 0;
+  }
+
+  .sidbarnav ul li {
+    margin: 0;
+  }
+
+  .dashboard .nav-pills .nav-link {
+    padding: 10px 20px;
+    width: auto;
+    height: 50px;
+    border-radius: 8px;
+  }
+
+  .sidbarnav-main {
+    height: calc(100% - 81px);
+    padding-bottom: 30px;
+  }
+
+  .dashboard .nav-pills .nav-link span {
+    margin-right: 8px;
+  }
+
+  .dashboard .nav-pills .nav-link span.down_arrow {
+    margin: 0 0 0 7px;
+    max-width: 55px;
+    position: static;
+  }
+
+  .navy {
+    padding: 0 0 0 15px;
+  }
+
+  .navy .navy_item {
+    margin: 0 0 20px 0;
+  }
+
+  .nav__content {
+    padding: 100px 0 0 250px;
+  }
+
+  header {
+    padding: 10px 15px 10px 265px;
+  }
+
+  .aeroswap-contant {
+    padding: 0 15px;
+  }
+
+  .harvest__card {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+    padding: 20px 15px;
+  }
+
+  .dashboard__tittle .dashboard__tittle_big {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .dashboard__tittle .dashboard__tittle_small {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .dashboard__value_layout .dashboard__value_img {
+    width: 28px;
+    margin-right: 10px;
+  }
+
+  .dashboard__value_layout .dashboard__value_text {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+
+  .dashboard__value_layout .dashboard__value_body .dashboard__value_body_text {
+    font-size: 26px;
+  }
+
+  .dashboard__value_layout {
+    padding: 20px 0;
+  }
+
+  .dashboard__tittle {
+    padding: 25px 0;
+  }
+
+  .partners .partners__tittle {
+    font-size: 36px;
+    line-height: 1;
+    padding: 40px 0;
+  }
+
+  .capital-lock-tab tbody tr td {
+    padding: 20px 10px;
+  }
+
+  .harvest__card_btn {
+    width: 80px;
+    font-size: 12px;
+    height: 35px;
+  }
+
+  .capital-lock-tab thead tr th {
+    padding: 0 10px
+  }
+
+  .capital-lock-tab table {
+    border-spacing: 0 20px;
+  }
+
+  .exchange__card .exchange__card_body .exchange__card_from_layout .exchange__card_from_layout_input {
+    width: 100%;
+  }
+
+  .exchange-add .row {
+    margin: 0 -15px;
+  }
+
+  .exchange-add [class*="col-"] {
+    padding: 0 15px;
+  }
+
+  .nav.nav-tabs .nav-item .nav-link {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 10px 14px;
+    margin: 0;
+    width: auto;
+  }
+
+  .stepn__card_main {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .stepn__card_main .stepn__card_img {
+    width: 200px;
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .header-navbar {
+    padding: 0;
+  }
+
+  .dashboard .nav-pills {
+    max-width: 210px;
+  }
+
+  .navbar-brand {
+    padding: 20px 15px;
+  }
+
+  .sidbarnav {
+    padding: 10px 15px 0;
+  }
+
+  .dashboard .nav-pills .nav-link {
+    padding: 5px 10px;
+  }
+
+  .dashboard .nav-pills .nav-link:hover .menu_text {
+    font-size: 16px;
+  }
+
+  .dashboard .nav-pills .nav-link span.down_arrow {
+    margin: 0 0 0 5px;
+    max-width: 50px;
+  }
+
+  header {
+    padding: 10px 15px 10px 225px;
+  }
+
+  .nav__content {
+    padding: 95px 0 0 210px;
+  }
+
+  .harvest__card_minus {
+    margin-right: 0;
+  }
+
+  .harvest__card_amount_head, .harvest__card_plx_head {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 0;
+  }
+
+  .harvest__card_img {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+
+  .harvest__card_btn {
+    width: 80px;
+    font-size: 12px;
+    height: 32px;
+  }
+
+  .dashboard__tittle .dashboard__tittle_big {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 20px;
+  }
+
+  .harvest__card_plx_green {
+    font-size: 16px;
+    line-height: 22px;
+    margin-right: 5px;
+  }
+
+  .capital-lock-tab table {
+    width: 850px;
+  }
+
+  .exchange__card {
+    width: 100%;
+    height: 457px;
+    border: 1px solid #FFFFFF;
+    border-radius: 32px;
+    margin-top: 30px;
+  }
+
+  .exchange__card .exchange__card_header {
+    margin-bottom: 10px;
+    padding: 20px 20px;
+  }
+
+  .exchange__card .exchange__card_body {
+    padding: 0 20px;
+  }
+
+  .table__result {
+    padding-top: 20px;
+  }
+
+  .lock__wallet {
+    padding-top: 20px;
+  }
+
+  .lock__wallet_header {
+    padding: 0 20px;
+  }
+
+  .deposit {
+    padding: 0 20px;
+  }
+
+  .daily_Interest {
+    margin: 0 20px;
+  }
+
+  .lock__duration {
+    margin: 15px 20px 0;
+  }
+
+  .lock__duration_btns {
+    margin: 15px 20px 0;
+  }
+
+  .lock__duration_btns.capital {
+    margin-bottom: 20px;
+  }
+
+  .unlock_btn {
+    margin-bottom: 30px;
+  }
+
+  .tab-content .taby {
+    padding-top: 30px;
+  }
+
+  .deposit form .max {
+    right: 46%;
+  }
+
+  .stepn__card_info__lay {
+    margin-bottom: 15px;
+    flex-direction: column;
+  }
+
+  .stepn__card_info_play_with {
+    margin: 10px 0 0px 0px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    padding: 40px 15px 20px;
+  }
+
+  .dashboard .nav-pills {
+    max-width: 250px;
+    left: -100%;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .nav.active {
+    left: 0;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .nav__content {
+    padding: 95px 0 0 0;
+  }
+
+  .navbar-collapse {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  header {
+    padding: 20px 15px;
+  }
+
+  .nav__content {
+    padding: 90px 0 0 0;
+  }
+
+  .navbar-toggler {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .collapse:not(.show) {
+    display: block;
+  }
+
+  header .nav-link.wallet {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0;
+    width: 150px;
+    height: 42px;
+  }
+
+  header .nav-link.wallet span {
+    margin-right: 5px;
+  }
+
+  header .navbar-nav .nav-item .nav-link .coin_icon {
+    margin-right: 10px;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+  }
+
+  .harvest__card {
+    margin: 0 0 15px 0;
+  }
+
+  .harvest__card {
+    padding: 15px 25px;
+  }
+
+  .harvest__card_minus_value {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .harvest__card_amount_head, .harvest__card_plx_head {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 0;
+  }
+
+  .harvest__card_plx_gray {
+    font-size: 16px;
+  }
+
+  .harvest__card_plx_green {
+    font-size: 18px;
+    line-height: 22px;
+    margin-right: 6px;
+  }
+
+  .nav.nav-tabs .nav-item .nav-link {
+    padding-top: 0;
+    margin-right: 20px;
+    width: auto;
+    padding: 10px 5px;
+  }
+
+  .nav.nav-tabs {
+    margin-top: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+  }
+
+  .exchange__card .exchange__card_body .exchange__card_from_layout .exchange__card_from_layout_input {
+    margin-bottom: 10px;
+  }
+
+  .exchange__card .exchange__card_body .exchange__card_from_layout_btn {
+    margin-top: 30px;
+  }
+
+  .exchange__card {
+    height: 420px;
+  }
+
+  .farma-detail-box {
+    padding: 25px 25px;
+    margin: 15px 0;
+  }
+
+  .stepn__card_main .stepn__card_img {
+    width: 180px;
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .dashboard__value_layout {
+    padding: 15px 0;
+    margin: 0;
+  }
+
+  .compound__card .compound__card_img {
+    margin-bottom: 10px;
+  }
+
+  .dashboard__value_layout .dashboard__value_body .dashboard__value_body_text {
+    font-size: 26px;
+    line-height: 1;
+    margin-top: 7px;
+  }
+
+  .compound__card .compound__card_tittle {
+    margin-bottom: 8px;
+  }
+
+  .compound__card .compound__card_amount {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .compound__card_layout {
+    margin: 10px 0;
+  }
+
+  .partners .partners__tittle {
+    padding: 30px 0;
+  }
+
+  .partners__img {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .dashboard-value {
+    margin: 0px 0 25px 0;
+  }
+
+  .partners .partners__tittle {
+    padding: 40px 0;
+  }
+
+  .dashboard-value .row {
+    justify-content: center;
+  }
+
+  .exchange__card {
+    height: auto;
+  }
+
+  .exchange__card .exchange__card_body {
+    padding: 0 20px 20px;
+  }
+
+  .exchange__card .exchange__card_body .liquidity__layout {
+    padding-top: 30px;
+  }
+
+  .exchange__card .exchange__card_body .liquidity__layout .liquidity__layout_text {
+    margin-bottom: 10px;
+  }
+
+  .farm-sort form .form-group .form-control {
+    height: 37px;
+    font-size: 14px;
+    padding-left: 15px;
+    width: 145px;
+  }
+
+  .search-icon {
+    right: 15px;
+  }
+
+  .farm-sort form .form-group {
+    margin-left: 10px;
+  }
+
+  .farma-detail-calc {
+    margin: 10px 0 0 0;
+  }
+
+  .farma-detail-calc ul li {
+    padding: 10px 0;
+  }
+
+  .farma-detail-harvest {
+    margin: 10px 0 0 0px;
+  }
+
+  .unlock-btn {
+    margin: 20px 0;
+  }
+
+  .deposit form .max {
+    right: 65%;
+  }
+
+  .farms-joind-sec .media {
+    flex-direction: column-reverse;
+    margin: 16px 0 0 0;
+  }
+
+  .stepn__card_main .stepn__card {
+    flex-direction: column;
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+
+  .stepn__card_main .stepn__card_img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .stepn__card_main .stepn__card_info_content {
+    flex-wrap: wrap;
+  }
+
+  .stepn__card_info_content_date {
+    margin: 0 0 10px 0;
+  }
+
+  .stepn__card_main .stepn__card_info_content .stepn__card_info_content_date h6 {
+    font-size: 14px;
+    margin: 0 0 5px 0;
+  }
+}
+@media (max-width: 575px) {
+  .menu-icon {
+    margin-right: 10px;
+  }
+
+  header .navbar-nav .nav-item .nav-link .coin_icon svg {
+    width: 20px;
+    height: auto;
+  }
+
+  header .navbar-nav .nav-item .nav-link .coin_icon {
+    margin-right: 7px;
+  }
+
+  header .navbar-nav .nav-item .nav-link .nav_link_amount_tittle, header .navbar-nav .nav-item .nav-link .nav_link_amount_prize {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  header .nav-link.wallet span svg {
+    width: 15px;
+    height: auto;
+  }
+
+  header .nav-link.wallet {
+    font-size: 12px;
+    line-height: 14px;
+    width: 120px;
+    height: 35px;
+  }
+
+  header .navbar-nav .nav-item .nav-link {
+    margin-right: 8px;
+  }
+
+  header {
+    padding: 20px 15px;
+  }
+
+  .nav__content {
+    padding: 90px 0 0 0;
+  }
+
+  .harvest__card {
+    padding: 10px 10px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+  }
+
+  .harvest__card_btn {
+    width: 100%;
+    font-size: 16px;
+    height: 40px;
+    margin: 10px 0 0 0;
+  }
+
+  .dashboard__tittle .dashboard__tittle_big {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+
+  .dashboard__tittle {
+    padding: 15px 0 20px;
+  }
+
+  .dashboard__tittle .dashboard__tittle_small {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .dashboard__value_layout {
+    text-align: center;
+  }
+
+  .dashboard__value_layout .dashboard__value_header {
+    justify-content: center;
+  }
+
+  .dashboard-value {
+    margin: 0px 0 20px 0;
+  }
+
+  .compound__card_layout {
+    margin: 15px 0;
+  }
+
+  .justify-content-between.pe-md-5 {
+    justify-content: center !important;
+  }
+
+  .capital-lock-tab .harvest__card_btn {
+    width: 80px;
+    font-size: 12px;
+    height: 32px;
+  }
+
+  .table__result table {
+    width: 550px !important;
+  }
+
+  .unlock-btn {
+    height: 45px;
+  }
+
+  .farma-detail-harvest ul .harvest__card_btn {
+    width: 90px;
+    font-size: 14px;
+    height: 36px;
+    margin: 10px 0 0 0;
+  }
+
+  .farms-joind-sec .media {
+    flex-direction: column-reverse;
+    margin: 15px 0 0 0;
+  }
+
+  .tab-content .taby {
+    display: block;
+  }
+
+  .deposit form .max {
+    right: 45%;
+  }
+
+  .lock__duration_btns .harvest__card_btn {
+    margin-right: 10px;
+    padding: 10px 10px;
+  }
+
+  .unlock_btn {
+    padding: 10px 0;
+    margin: 0 auto 20px;
+    font-size: 16px;
+    max-width: 190px;
+    width: 100%;
+  }
+
+  .nft-store-sec .row {
+    margin: 0 -15px;
+  }
+
+  .nft-store-sec [class*="col-"] {
+    padding: 0 15px;
+  }
+
+  .nft-store-box {
+    padding: 15px 0;
+  }
+
+  .stepn__card_main .stepn__card_info_btns .stepn__card_btn {
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+
+  .stepn__card_info_play_with {
+    margin: 0;
+  }
+
+  .stepn__card_info_content_date {
+    margin: 0 0 15px 0;
+  }
+
+  .stepn__card_info_play_with_form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 374px) {
+  header .nav-link.wallet {
+    font-size: 10px;
+    line-height: 10px;
+    width: 100px;
+    height: 33px;
+  }
+
+  header .navbar-nav .nav-item .nav-link .nav_link_amount_tittle, header .navbar-nav .nav-item .nav-link .nav_link_amount_prize {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .menu-icon {
+    margin-right: 7px;
+  }
+
+  .menu-icon img {
+    width: 18px;
+  }
+
+  header .navbar-nav .nav-item .nav-link .coin_icon {
+    margin-right: 3px;
+  }
+
+  .harvest__card_amount {
+    margin-right: 0;
+    width: 85%;
+  }
+
+  .harvest__card_amount_head.opacity-0 {
+    display: none;
+  }
+
+  .harvest__card_minus {
+    margin-right: 0;
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  .exchange__card {
+    border-radius: 15px;
+  }
+
+  .exchange__card .exchange__card_header {
+    padding: 20px 15px;
+    margin: 0;
+  }
+
+  .exchange__card .exchange__card_body {
+    padding: 0 14px 20px;
+
+  }
+
+  .exchange__card .exchange__card_body .exchange__card_from_layout .exchange__card_from_layout_input {
+    padding-left: 5px;
+  }
+
+  .exchange__card .exchange__card_body .exchange__card_from_layout_btn {
+    width: 100%;
+  }
+
+  .farma-detail-box {
+    padding: 20px 20px;
+  }
+
+  .farm-sort form .form-group label {
+    font-size: 14px;
+    width: 60px;
+  }
+
+  .farm-sort form .form-group select.form-control {
+    width: 85px;
+  }
+
+  .farm-sort form .form-group .form-control {
+    width: 125px;
+  }
+
+  .lock__wallet {
+    border-radius: 10px;
+  }
+
+  .lock__wallet_header,
+  .deposit {
+    padding: 0 15px;
+  }
+
+  .daily_Interest {
+    margin: 0 15px;
+  }
+
+  .lock__duration {
+    margin: 15px 15px 0;
+  }
+
+  .lock__duration_btns {
+    margin: 15px 15px 0;
+  }
+
+  .deposit form .form-control {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  .deposit form .btn {
+    width: 80px;
+    height: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0 0px;
+  }
+
+  .deposit form .max {
+    right: 48%;
+  }
+
+  .harvest__card_btn {
+    font-size: 12px;
+  }
+
+  .nav.nav-tabs .nav-item .nav-link {
+    margin-right: 10px;
+  }
+}
